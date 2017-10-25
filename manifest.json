@@ -22,8 +22,13 @@
       "src": "img/icons/icon-256x256.png",
       "sizes": "256x256",
       "type": "image/png"
+    }, {
+      "src": "img/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }],
   "start_url": "index.html",
   "display": "standalone",
-  "background)color": "rgba(237, 241, 251, 0.5)"
+  "background_color": "rgba(237, 241, 251, 0.5)",
+  "theme_color": "rgba(237, 241, 251, 0.5)"
 }
