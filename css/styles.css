@@ -1,44 +1,103 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-*{
+#header, #form-add-note {
+    margin-bottom: 20px;
+}
+
+#content {
+    padding-bottom: 20px;
+}
+
+#notes ul, #notes li {
+    list-style: none;
+}
+
+#notes li {
+    cursor: pointer;
+    padding: 10px;
+}
+
+#notes li:hover {
+    background-color: #607d8b;
+    color: #fff;
+}
+
+* {
     background-color: transparent;
     box-sizing: border-box;
+    border: none;
     margin: 0;
     padding: 0;
 }
 
-body{
-    font-family: 'Noto Sans', sans-serif;
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding: 20px;
 }
 
-#content{
-    margin-top: 45px;
-    background: rgba(237, 241, 251, 0.5);
+h1, p {
+    padding: 20px 0;
 }
 
-#content h1{
-    font-family: 'Pacifico', cursive;
+h1 {
+    font-size: 2.8em;
 }
 
-#content ul{
-    list-style-type: none;
+p {
+    font-size: 1em;
 }
 
-#content ul li{
-    padding: 5px;
-    color: black;
+input {
+    font: inherit;
+    padding: 10px 20px;
 }
 
-#notas li:hover{
-    background: rgba(123, 130, 140, 0.5);
-    cursor: pointer;
-    color: white;
-    transition: 0.2s;
+/** Muito pequeno **/
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.color{
-    background: rgba(123, 130, 140, 0.5);
+.row {
+    display: flex;
 }
 
+.col-1 {
+    flex-grow: 1;
+}
 
+.col-2 {
+    flex-grow: 2;
+}
+
+/** Pequeno **/
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+/** Medio **/
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+/** Grande **/
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/** Muito grande **/
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
