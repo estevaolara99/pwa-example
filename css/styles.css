@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+*{
+    background-color: transparent;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#content{
+    margin-top: 45px;
+    background: rgba(237, 241, 251, 0.5);
+}
+
+#content h1{
+    font-family: 'Pacifico', cursive;
+}
+
+#content ul{
+    list-style-type: none;
+}
+
+#content ul li{
+    padding: 5px;
+    color: black;
+}
+
+#notas li:hover{
+    background: rgba(123, 130, 140, 0.5);
+    cursor: pointer;
+    color: white;
+    transition: 0.2s;
+}
+
+.color{
+    background: rgba(123, 130, 140, 0.5);
+}
+
+
